@@ -1,5 +1,5 @@
 /* it is taking 377px here and on browser as 360px means 17px extra here */
-@media (max-width: 377px) { 
+@media (max-width: 431px) { 
     #brandname { display: none; }
   }
   
@@ -24,7 +24,7 @@
     font-size: 55px;
     
   }
-  @media(max-width: 377px){
+  @media(max-width: 431px){
     #heading-main-left {font-size: 35px;
     font: 700;}
   }
@@ -35,13 +35,13 @@
     
   }
   
-  #button-main-left {
+  /* #button-main-left {
     color: white;
     font-size: 18px;
     width: 185px;
     height: 50px;
     background-color: tomato;
-  }
+  } */
   
   #main-right {
     align-content: center;
@@ -70,7 +70,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
-  @media (max-width: 377px) {
+  @media (max-width: 431px) {
     #feature-head {font-size: 16px; margin-bottom: 50px;
       margin-top: 80px; }
   }
@@ -97,7 +97,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
-  @media (max-width: 377px) {
+  @media (max-width: 431px) {
     #learnheading { font-size: 16px;}
   }
   
@@ -105,6 +105,6 @@
     text-align: left;
     color: #256cb5;
   }
-  @media(max-width: 377px) {
+  @media(max-width: 431px) {
     #learnpara {padding-left: 10px;}
   }

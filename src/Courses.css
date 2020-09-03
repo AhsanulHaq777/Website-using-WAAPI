@@ -1,0 +1,25 @@
+#topimg {
+    background-image: url(./Images/landingpage2.jpg);
+    background-size: 1587px 400px;
+    background-repeat: no-repeat;
+    /* flex-grow: 1; */
+    /* height: 550px; */
+}
+@media(max-width: 431px) {
+    #topimg {background-size: 1587px 430px; }
+    #heading {font-size: 20px; font: 400;}
+}
+
+#headingdiv {
+    text-align: left;
+    /* margin-top: 145px; */
+    /* margin-left: 200px; */
+    color: white;
+    padding-left: 30px;
+}
+
+#heading {
+    font: 900;
+    font-weight: bold;
+    font-size: 55px;
+}
