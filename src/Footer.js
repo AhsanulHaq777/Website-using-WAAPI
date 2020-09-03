@@ -13,12 +13,6 @@ const useStyles = makeStyles((theme) => ({
     // textAlign: 'center',
     padding: theme.spacing(7)
   },
-
-  paper: {
-    padding: theme.spacing(1),
-    alignContent: 'center',
-    color: '#256cb5'
-  },
 }));
 
 function Footer() {
