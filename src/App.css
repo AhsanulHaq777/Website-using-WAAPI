@@ -1,67 +1,9 @@
 .App {
   text-align: center;
-}
-
-@media (max-width: 360px) {
-  #brandname { display: none; }
-}
-
-/* css for the Home (landing) page */
-
-#main-grid-image {
-  background-image: url(./Images/landingpage5.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  flex-grow: 1;
-}
-
-#main-left {
-  align-content: center;
-  text-align: left;
-}
-
-#heading-main-left {
-  color: white;
-  font: 900;
-  font-weight: bold;
-  font-size: 60px;
-}
-#para-main-left {
-  color: white;
-  font-size: 16px;
-  font-weight: 400;
   
 }
 
-#button-main-left {
-  color: white;
-  font-size: 18px;
-  width: 185px;
-  height: 50px;
-  background-color: tomato;
-}
-
-#main-right {
-  align-content: center;
-}
-
-#image-main-right {
-  width: 100%;
-  flex-grow: 1;
-
-}
-
-#treediv {
-  background-image: url(./Images/landingleft4.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  flex-grow: 1;
-  height: 300px;
-  align-content: center;
-  text-align: center;
-}
-
-/* css for the header */
+/* css for the header Page */
 
 #Navi {
   background-color: blue;

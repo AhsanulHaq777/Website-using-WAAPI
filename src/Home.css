@@ -1,0 +1,110 @@
+/* it is taking 377px here and on browser as 360px means 17px extra here */
+@media (max-width: 377px) { 
+    #brandname { display: none; }
+  }
+  
+  /* css for the Home (landing) page */
+  
+  #main-grid-image {
+    background-image: url(./Images/landingpage5.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+  }
+  
+  #main-left {
+    align-content: center;
+    text-align: left;
+  }
+  
+  #heading-main-left {
+    color: white;
+    font: 900;
+    font-weight: bold;
+    font-size: 55px;
+    
+  }
+  @media(max-width: 377px){
+    #heading-main-left {font-size: 35px;
+    font: 700;}
+  }
+  #para-main-left {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    
+  }
+  
+  #button-main-left {
+    color: white;
+    font-size: 18px;
+    width: 185px;
+    height: 50px;
+    background-color: tomato;
+  }
+  
+  #main-right {
+    align-content: center;
+  }
+  
+  #image-main-right {
+    width: 100%;
+    flex-grow: 1;
+  
+  }
+  
+  #papers-3 {
+    /* position: absolute; */
+    margin-top: -30px;
+  }
+  
+  
+  /* css for features (Home) */
+  
+  #feature-head {
+    text-align: center;
+    color: #256cb5;
+    margin-bottom: 70px;
+    margin-top: 120px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  @media (max-width: 377px) {
+    #feature-head {font-size: 16px; margin-bottom: 50px;
+      margin-top: 80px; }
+  }
+  
+  /* css for last learning div (Home) */
+  
+  #learnmaindiv {
+    margin-top: 100px;
+    margin-bottom: 35px;
+  }
+  
+  #learnimgdiv {
+    align-content: center;
+  }
+  
+  #learnimg {
+    flex-grow: 1;
+    width: 100%;
+  }
+  #learnheading {
+    text-align: left;
+    color: #256cb5;
+    font-size: 26px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  @media (max-width: 377px) {
+    #learnheading { font-size: 16px;}
+  }
+  
+  #learnpara {
+    text-align: left;
+    color: #256cb5;
+  }
+  @media(max-width: 377px) {
+    #learnpara {padding-left: 10px;}
+  }

@@ -66,7 +66,7 @@ export default function Home() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" style={{backgroundColor: 'skyblue'}}>
+      <AppBar position="relative" style={{backgroundColor: 'skyblue'}}>
         <Toolbar>
           
           <Typography id = "brandname"  hidden-xs variant="h6" className={classes.title}>

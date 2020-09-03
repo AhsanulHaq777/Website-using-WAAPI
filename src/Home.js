@@ -1,13 +1,30 @@
 import React from 'react';
-import './App.css';
+import './Home.css';
 
 //material-ui imports
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Button } from '@material-ui/core';
+import { Button, Paper } from '@material-ui/core';
+//for cards
+import Card from '@material-ui/core/Card';
+import CardHeader from '@material-ui/core/CardHeader';
+import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 //images imports
 import landingleftimage from './Images/landingleft6.png'
+import icon1 from './Images/icon1.svg'
+import icon2 from './Images/icon2.svg'
+import icon3 from './Images/icon3.svg'
+import featimg from './Images/react.jpg'
+import featimg2 from './Images/javasc.jpg'
+import featimg3 from './Images/html.jpg'
+import featimg4 from './Images/css.jpg'
+import learning from './Images/learn.png'
+import iconright from './Images/right-icon.svg'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -17,13 +34,37 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     padding: theme.spacing(2)
   },
+
   paper: {
     padding: theme.spacing(1),
-    textAlign: 'center',
     color: theme.palette.text.secondary,
     alignContent: 'center',
+    color: '#256cb5'
     // backgroundImage: `url(${landingpageimage})`
   },
+  button: {
+    background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+    border: 0,
+    borderRadius: 3,
+    boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+  },
+  rootfeature_learn: {
+    flexGrow: 1,
+    padding: theme.spacing(7),
+
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+
+  },
+  rootcard: {
+    // maxWidth: 345,
+    color: '#256cb5'
+  }
 }));
 
 function Home() {
@@ -35,18 +76,16 @@ function Home() {
           <Grid container item xs={12} sm={12} md={6} lg={6}>
             <Grid container item xs={12} sm={12} md={12} lg={12}></Grid>
             <Grid container item xs={12} sm={12} md={12} lg={12}>
-              <Grid item xs={1} sm={1} md={3} lg={3}>
-              </Grid>
+              <Grid item xs={1} sm={1} md={3} lg={3}></Grid>
               <Grid item xs={10} sm={10} md={9} lg={9} >
                 <div id="main-left">
-                  <h2 id="heading-main-left">Online learning platform</h2>
+                  <h2 id="heading-main-left">Online learning <br /> platform</h2>
                   <p id="para-main-left">Build skills with cources, certificates and degrees online from world-class universities and companies</p>
                   <br />
-                  <Button id="button-main-left"  >Join For Free</Button>
+                  <Button className={classes.button}   >Join For Free</Button>
                 </div>
               </Grid>
-              <Grid item xs={1} sm={1} md={0} lg={0}>
-              </Grid>
+              <Grid item xs={1} sm={1} md={0} lg={0}></Grid>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12}></Grid>
             <Grid container ></Grid>
@@ -64,17 +103,163 @@ function Home() {
           </Grid>
         </Grid>
       </div>
-      <Grid container spacing={3} style={{ paddingTop: '12px' }} >
-        <Grid item xs={2} sm={2} md={2} lg={2}></Grid>
-        <Grid item xs={8} sm={8} md={8} lg={8}>
-          <Grid container spacing={3} >
-            <Grid item xs={12} sm={12} md={6} lg={4}><div id="treediv" ><h2>first</h2></div></Grid>
-            <Grid item xs={12} sm={12} md={6} lg={4}><div id="treediv" ><h2>second</h2></div></Grid>
-            <Grid item xs={12} sm={12} md={12} lg={4}><div id="treediv" ><h2>third</h2></div></Grid>
+      <div id="papers-3">
+        <Grid container spacing={3}  >
+          <Grid item xs={2} sm={2} md={2} lg={2}></Grid>
+          <Grid item xs={8} sm={8} md={8} lg={8}>
+            <Grid container spacing={5} >
+              <Grid item xs={12} sm={12} md={6} lg={4}>
+                <Paper className={classes.paper}>
+                  <Grid container justify="center" alignItems="center" spacing={3}>
+                    <Grid item xs={4} sm={4} md={4} lg={3}><div><img src={icon1} /></div></Grid>
+                    <Grid item xs={8} sm={8} md={8} lg={9}><div ><h2>60+ UX cources</h2>
+                      <p>The automated process all your website tasks.</p></div></Grid>
+                  </Grid>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} sm={12} md={6} lg={4}>
+                <Paper className={classes.paper}>
+                  <Grid container justify="center" alignItems="center" spacing={3}>
+                    <Grid item xs={4} sm={4} md={4} lg={3}><div><img src={icon2} /></div></Grid>
+                    <Grid item xs={8} sm={8} md={8} lg={9}><div ><h2>Expert instructors</h2>
+                      <p>The automated process all your website tasks.</p></div></Grid>
+                  </Grid>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} sm={12} md={6} lg={4}>
+                <Paper className={classes.paper}>
+                  <Grid container justify="center" alignItems="center" spacing={3}>
+                    <Grid item xs={4} sm={4} md={4} lg={3} ><div><img src={icon3} /></div></Grid>
+                    <Grid item xs={8} sm={8} md={8} lg={9} ><div ><h2>Lifetime access</h2>
+                      <p>The automated process all your website tasks.</p></div></Grid>
+                  </Grid>
+                </Paper>
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={2} sm={2} md={2} lg={2}></Grid>
+        </Grid>
+      </div>
+      <div className={classes.rootfeature_learn}>
+        <div id="feature-head"><h2>Our featured cources</h2></div>
+        <div >
+          <Grid container spacing={3}>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card className={classes.rootcard}>
+                <CardHeader
+                  color='#256cb5'
+                  title="Learn React.js"
+                  subheader="Fundamentals of React for Web Design"
+                />
+                {/* <CardMedia
+        className={classes.media}
+        image= "E:/React Projects/project-5-website/src/Images/featureimg1.jpg"
+        title="React.js"
+      /> */}
+                <img style={{ width: '100%' }} src={featimg} alt="myreact" />
+                <CardContent>
+                  <Typography variant="body2" color="#256cb5" component="p">
+                    Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <IconButton aria-label="add to favorites">
+                    <FavoriteIcon />
+                  </IconButton>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card className={classes.rootcard}>
+                <CardHeader
+                  title="Learn JavaScript"
+                  subheader="Fundamentals of JS for Web Design"
+                />
+                <img style={{ width: '100%' }} src={featimg2} alt="myreact" />
+                <CardContent>
+                  <Typography variant="body2" color="#256cb5" component="p">
+                    Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <IconButton aria-label="add to favorites">
+                    <FavoriteIcon />
+                  </IconButton>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card className={classes.rootcard}>
+                <CardHeader
+                  title="Learn HTML5"
+                  subheader="Fundamentals of HTML5 for Web Design"
+                />
+                <img style={{ width: '100%' }} src={featimg3} alt="myreact" />
+                <CardContent>
+                  <Typography variant="body2" color="#256cb5" component="p">
+                    Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <IconButton aria-label="add to favorites">
+                    <FavoriteIcon />
+                  </IconButton>
+                </CardActions>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4} lg={3}>
+              <Card className={classes.rootcard}>
+                <CardHeader
+                  title="Learn CSS3"
+                  subheader="Fundamentals of CSS3 for Web Design"
+                />
+                <img style={{ width: '100%' }} src={featimg4} alt="myreact" />
+                <CardContent>
+                  <Typography variant="body2" color="#256cb5" component="p">
+                    Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
+                  </Typography>
+                </CardContent>
+                <CardActions disableSpacing>
+                  <IconButton aria-label="add to favorites">
+                    <FavoriteIcon />
+                  </IconButton>
+                </CardActions>
+              </Card>
+            </Grid>
+          </Grid>
+        </div>
+      </div>
+      <div id="learnmaindiv" className={classes.rootfeature_learn}>
+        <Grid container spacing={5} >
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <div id="learnimgdiv"><img id="learnimg" src={learning} /></div>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <div id="learnheading"><h2>Take the next step <br /> toward your personal <br /> and professional goals <br /> with us.</h2></div>
+            <Grid container>
+
+              <Grid container spacing={2} justify="center" alignItems="center">
+                <Grid item xs={1} sm={1} md={1} lg={1}><div><img src={iconright} /></div></Grid>
+                <Grid item xs={11} sm={11} md={11} lg={11}>
+                  <div id="learnpara"><p>Join millions of people from around the world learning together.</p></div>
+                </Grid>
+              </Grid>
+              <Grid container spacing={2} justify="center" alignItems="center">
+                <Grid item xs={1} sm={1} md={1} lg={1}><div><img src={iconright} /></div></Grid>
+                <Grid item xs={11} sm={11} md={11} lg={11}>
+                  <div id="learnpara"><p>Join millions of people from around the world learning together. Online learning is as easy and natural.</p></div>
+                </Grid>
+              </Grid>
+              <Grid container spacing={2} justify="center" alignItems="center">
+                <Grid item xs={1} sm={1} md={1} lg={1}><div><img src={iconright} /></div></Grid>
+                <Grid item xs={11} sm={11} md={11} lg={11}>
+                  <div id="learnpara"><p>Techniques to engage effectively with vulnerable children and young people.</p></div>
+                </Grid>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={2} sm={2} md={2} lg={2}></Grid>
-      </Grid>
+      </div>
     </div>
   );
 }
