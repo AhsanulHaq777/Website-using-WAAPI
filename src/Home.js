@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
 
   paper: {
     padding: theme.spacing(1),
-    color: theme.palette.text.secondary,
     alignContent: 'center',
     color: '#256cb5'
     // backgroundImage: `url(${landingpageimage})`
@@ -95,7 +94,7 @@ function Home() {
             </Grid>
             <Grid item xs={10} sm={10} md={12} lg={12}>
               <div id="main-right">
-                <img id="image-main-right" src={landingleftimage} />
+                <img id="image-main-right" alt="mainimg" src={landingleftimage} />
               </div>
             </Grid>
             <Grid item xs={1} sm={1} md={0} lg={0}>
@@ -111,7 +110,7 @@ function Home() {
               <Grid item xs={12} sm={12} md={6} lg={4}>
                 <Paper className={classes.paper}>
                   <Grid container justify="center" alignItems="center" spacing={3}>
-                    <Grid item xs={4} sm={4} md={4} lg={3}><div><img src={icon1} /></div></Grid>
+                    <Grid item xs={4} sm={4} md={4} lg={3}><div><img alt="img1" src={icon1} /></div></Grid>
                     <Grid item xs={8} sm={8} md={8} lg={9}><div ><h2>60+ UX cources</h2>
                       <p>The automated process all your website tasks.</p></div></Grid>
                   </Grid>
@@ -120,7 +119,7 @@ function Home() {
               <Grid item xs={12} sm={12} md={6} lg={4}>
                 <Paper className={classes.paper}>
                   <Grid container justify="center" alignItems="center" spacing={3}>
-                    <Grid item xs={4} sm={4} md={4} lg={3}><div><img src={icon2} /></div></Grid>
+                    <Grid item xs={4} sm={4} md={4} lg={3}><div><img alt="img2" src={icon2} /></div></Grid>
                     <Grid item xs={8} sm={8} md={8} lg={9}><div ><h2>Expert instructors</h2>
                       <p>The automated process all your website tasks.</p></div></Grid>
                   </Grid>
@@ -129,7 +128,7 @@ function Home() {
               <Grid item xs={12} sm={12} md={6} lg={4}>
                 <Paper className={classes.paper}>
                   <Grid container justify="center" alignItems="center" spacing={3}>
-                    <Grid item xs={4} sm={4} md={4} lg={3} ><div><img src={icon3} /></div></Grid>
+                    <Grid item xs={4} sm={4} md={4} lg={3} ><div><img alt="img3" src={icon3} /></div></Grid>
                     <Grid item xs={8} sm={8} md={8} lg={9} ><div ><h2>Lifetime access</h2>
                       <p>The automated process all your website tasks.</p></div></Grid>
                   </Grid>
@@ -194,7 +193,7 @@ function Home() {
                   title="Learn HTML5"
                   subheader="Fundamentals of HTML5 for Web Design"
                 />
-                <img style={{ width: '100%' }} src={featimg3} alt="myreact" />
+                <img style={{ width: '100%' }} src={featimg3} alt="myreact2" />
                 <CardContent>
                   <Typography variant="body2" color="#256cb5" component="p">
                     Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
@@ -213,7 +212,7 @@ function Home() {
                   title="Learn CSS3"
                   subheader="Fundamentals of CSS3 for Web Design"
                 />
-                <img style={{ width: '100%' }} src={featimg4} alt="myreact" />
+                <img style={{ width: '100%' }} src={featimg4} alt="myreact3" />
                 <CardContent>
                   <Typography variant="body2" color="#256cb5" component="p">
                     Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
@@ -232,26 +231,26 @@ function Home() {
       <div id="learnmaindiv" className={classes.rootfeature_learn}>
         <Grid container spacing={5} >
           <Grid item xs={12} sm={12} md={6} lg={6}>
-            <div id="learnimgdiv"><img id="learnimg" src={learning} /></div>
+            <div id="learnimgdiv"><img id="learnimg" alt="learn1" src={learning} /></div>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={6}>
             <div id="learnheading"><h2>Take the next step <br /> toward your personal <br /> and professional goals <br /> with us.</h2></div>
             <Grid container>
 
               <Grid container spacing={2} justify="center" alignItems="center">
-                <Grid item xs={1} sm={1} md={1} lg={1}><div><img src={iconright} /></div></Grid>
+                <Grid item xs={1} sm={1} md={1} lg={1}><div><img alt="learn2" src={iconright} /></div></Grid>
                 <Grid item xs={11} sm={11} md={11} lg={11}>
                   <div id="learnpara"><p>Join millions of people from around the world learning together.</p></div>
                 </Grid>
               </Grid>
               <Grid container spacing={2} justify="center" alignItems="center">
-                <Grid item xs={1} sm={1} md={1} lg={1}><div><img src={iconright} /></div></Grid>
+                <Grid item xs={1} sm={1} md={1} lg={1}><div><img alt="learn3" src={iconright} /></div></Grid>
                 <Grid item xs={11} sm={11} md={11} lg={11}>
                   <div id="learnpara"><p>Join millions of people from around the world learning together. Online learning is as easy and natural.</p></div>
                 </Grid>
               </Grid>
               <Grid container spacing={2} justify="center" alignItems="center">
-                <Grid item xs={1} sm={1} md={1} lg={1}><div><img src={iconright} /></div></Grid>
+                <Grid item xs={1} sm={1} md={1} lg={1}><div><img alt="learn4" src={iconright} /></div></Grid>
                 <Grid item xs={11} sm={11} md={11} lg={11}>
                   <div id="learnpara"><p>Techniques to engage effectively with vulnerable children and young people.</p></div>
                 </Grid>
