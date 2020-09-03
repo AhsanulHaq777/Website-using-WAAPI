@@ -1,0 +1,41 @@
+#footerbackground {
+    
+    background-color: #256cb5;;
+    flex-grow: 1;
+    
+}
+
+#footerinnerdiv {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+#footerbranddiv {
+    text-align: left;
+    color: white;
+    padding-left: 35px;
+}
+
+#footerbrandhead {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+#list {
+    text-align: left;
+    color: white;
+}
+
+#listheading {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 35px;
+}
+
+#copyrightdiv {
+    text-align: center;
+    color: white;
+    margin-top: 90px;
+    /* margin-bottom: 30px; */
+}
