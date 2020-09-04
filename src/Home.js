@@ -29,9 +29,9 @@ import iconright from './Images/right-icon.svg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    alignContent: 'center',
-    textAlign: 'center',
+    // flexGrow: 1,
+    // alignContent: 'center',
+    // textAlign: 'center',
     padding: theme.spacing(2)
   },
 
@@ -40,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
     alignContent: 'center',
     color: '#256cb5'
     // backgroundImage: `url(${landingpageimage})`
+  },
+  papers3: {
+    padding: theme.spacing(2),
+    marginTop: '-30px',
   },
   button: {
     background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
@@ -70,7 +74,7 @@ function Home() {
   const classes = useStyles();
   return (
     <div >
-      <div id="main-grid-image" >
+      <div className={classes.root} id="main-grid-image" >
         <Grid container spacing={3} >
           <Grid container item xs={12} sm={12} md={6} lg={6}>
             <Grid container item xs={12} sm={12} md={12} lg={12}></Grid>
@@ -102,7 +106,7 @@ function Home() {
           </Grid>
         </Grid>
       </div>
-      <div id="papers-3">
+      <div className={classes.papers3}>
         <Grid container spacing={3}  >
           <Grid item xs={2} sm={2} md={2} lg={2}></Grid>
           <Grid item xs={8} sm={8} md={8} lg={8}>
