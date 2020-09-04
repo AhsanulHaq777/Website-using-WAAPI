@@ -3,6 +3,7 @@ import './Courses.css';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
+import { Button } from '@material-ui/core';
 
 import './Home.css';
 import featimg from './Images/react.jpg'
@@ -26,13 +27,26 @@ const useStyles = makeStyles((theme) => ({
     },
     rootfeature_learn: {
         flexGrow: 1,
-        padding: theme.spacing(7),
+        padding: theme.spacing(10),
 
     },
     rootcard: {
         // maxWidth: 345,
         color: '#256cb5'
-    }
+    },
+    button: {
+        background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+        border: 0,
+        borderRadius: 3,
+        boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
+        color: 'white',
+        height: 48,
+        width: 250,
+        padding: '0 20px',
+        fontSize: '18px',
+        letterSpacing: 1,
+        wordSpacing: 2,
+      },
 }));
 
 function Courses() {
@@ -51,10 +65,10 @@ function Courses() {
                 </Grid>
             </div>
             <div className={classes.rootfeature_learn}>
-                <div id="feature-head"><h2>Our featured cources</h2></div>
+                <div id="feature-heading"><h2>Our featured cources</h2></div>
                 <div >
-                    <Grid container spacing={3}>
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                    <Grid container spacing={5}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className={classes.rootcard}>
                                 <CardHeader
                                     color='#256cb5'
@@ -79,7 +93,7 @@ function Courses() {
                                 </CardActions>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn JavaScript"
@@ -98,7 +112,7 @@ function Courses() {
                                 </CardActions>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn HTML5"
@@ -117,7 +131,7 @@ function Courses() {
                                 </CardActions>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn CSS3"
@@ -136,7 +150,7 @@ function Courses() {
                                 </CardActions>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className={classes.rootcard}>
                                 <CardHeader
                                     color='#256cb5'
@@ -161,7 +175,7 @@ function Courses() {
                                 </CardActions>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn JavaScript"
@@ -180,7 +194,7 @@ function Courses() {
                                 </CardActions>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn HTML5"
@@ -199,7 +213,7 @@ function Courses() {
                                 </CardActions>
                             </Card>
                         </Grid>
-                        <Grid item xs={12} sm={6} md={4} lg={3}>
+                        <Grid item xs={12} sm={6} md={4} lg={4}>
                             <Card className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn CSS3"
@@ -219,7 +233,11 @@ function Courses() {
                             </Card>
                         </Grid>
                     </Grid>
+                    <div style={{marginTop: '70px',textAlign: 'center', marginBottom: '50px'}}><Button className={classes.button}>See More</Button></div>
                 </div>
+            </div>
+            <div>
+                
             </div>
         </div>
     );

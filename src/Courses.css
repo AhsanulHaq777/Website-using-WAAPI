@@ -1,9 +1,9 @@
 #topimg {
     background-image: url(./Images/landingpage2.jpg);
-    background-size: 1587px 400px;
+    background-size: 1587px 380px;
     background-repeat: no-repeat;
     /* flex-grow: 1; */
-    /* height: 550px; */
+    height: 385px;
 }
 @media(max-width: 431px) {
     #topimg {background-size: 1587px 430px; }
@@ -16,6 +16,7 @@
     /* margin-left: 200px; */
     color: white;
     padding-left: 30px;
+    padding-top: 40px;
 }
 
 #heading {
@@ -23,3 +24,12 @@
     font-weight: bold;
     font-size: 55px;
 }
+
+#feature-heading {
+    text-align: center;
+    color: #256cb5;
+    margin-bottom: 70px;
+    /* margin-top: 10px; */
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
