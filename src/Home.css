@@ -1,7 +1,4 @@
-/* it is taking 377px here and on browser as 360px means 17px extra here */
-@media (max-width: 431px) { 
-    #brandname { display: none; }
-  }
+
   
   /* css for the Home (landing) page */
   
@@ -10,11 +7,13 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     flex-grow: 1;
+    
   }
   
   #main-left {
     align-content: center;
     text-align: left;
+    padding-top: 100px;
   }
   
   #heading-main-left {

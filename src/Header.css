@@ -1,0 +1,11 @@
+/* it is taking 377px here and on browser as 360px means 17px extra here */
+@media (max-width: 431px) { 
+    #brandname { display: none; }
+  }
+
+  #navbar {
+    background-color: transparent;
+    position: absolute;
+    height: 100px;
+    justify-content: center;
+  }

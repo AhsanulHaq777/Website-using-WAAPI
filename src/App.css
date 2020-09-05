@@ -2,23 +2,3 @@
   text-align: center;
   
 }
-
-/* css for the header Page */
-
-#Navi {
-  background-color: blue;
-  align-items: flex-end;
-}
-#navimage {
-  width: 150px;
-  height: 100px;
-  margin-right: 1023px;
-}
-#navbutton {
-  color: #342435;
-  font-Size: 16px;
-  height: 50px;
-  
-  width: 120px;
-}
-
