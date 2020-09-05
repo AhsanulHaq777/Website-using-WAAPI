@@ -1,7 +1,5 @@
 import React from 'react';
 import './About.css'
-import './Courses.css';
-import './Home.css';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -26,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1),
     alignContent: 'center',
     color: '#256cb5'
-    // backgroundImage: `url(${landingpageimage})`
   },
   learn: {
     flexGrow: 1,

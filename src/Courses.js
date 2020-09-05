@@ -1,11 +1,13 @@
 import React from 'react';
 import './Courses.css';
 
+//material-ui
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
 
-import './Home.css';
+
+//images
 import featimg from './Images/react.jpg'
 import featimg2 from './Images/javasc.jpg'
 import featimg3 from './Images/html.jpg'
@@ -31,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
 
     },
     rootcard: {
-        // maxWidth: 345,
         color: '#256cb5'
     },
     button: {
@@ -76,15 +77,15 @@ function Courses() {
                                     subheader="Fundamentals of React for Web Design"
                                 />
                                 {/* <CardMedia
-        className={classes.media}
-        image= "E:/React Projects/project-5-website/src/Images/featureimg1.jpg"
-        title="React.js"
-      /> */}
+                                    className={classes.media}
+                                    image= "E:/React Projects/project-5-website/src/Images/featureimg1.jpg"
+                                    title="React.js"
+                                /> */}
                                 <img style={{ width: '100%' }} src={featimg} alt="myreact" />
                                 <CardContent>
                                     <Typography variant="body2" color="#256cb5" component="p">
                                         Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
-                  </Typography>
+                                    </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
                                     <IconButton aria-label="add to favorites">
@@ -103,7 +104,7 @@ function Courses() {
                                 <CardContent>
                                     <Typography variant="body2" color="#256cb5" component="p">
                                         Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
-                  </Typography>
+                                    </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
                                     <IconButton aria-label="add to favorites">
@@ -122,7 +123,7 @@ function Courses() {
                                 <CardContent>
                                     <Typography variant="body2" color="#256cb5" component="p">
                                         Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
-                  </Typography>
+                                    </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
                                     <IconButton aria-label="add to favorites">
@@ -141,7 +142,7 @@ function Courses() {
                                 <CardContent>
                                     <Typography variant="body2" color="#256cb5" component="p">
                                         Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
-                  </Typography>
+                                    </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
                                     <IconButton aria-label="add to favorites">
@@ -157,16 +158,11 @@ function Courses() {
                                     title="Learn React.js"
                                     subheader="Fundamentals of React for Web Design"
                                 />
-                                {/* <CardMedia
-        className={classes.media}
-        image= "E:/React Projects/project-5-website/src/Images/featureimg1.jpg"
-        title="React.js"
-      /> */}
                                 <img style={{ width: '100%' }} src={featimg} alt="myreact" />
                                 <CardContent>
                                     <Typography variant="body2" color="#256cb5" component="p">
                                         Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
-                  </Typography>
+                                    </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
                                     <IconButton aria-label="add to favorites">
@@ -185,7 +181,7 @@ function Courses() {
                                 <CardContent>
                                     <Typography variant="body2" color="#256cb5" component="p">
                                         Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
-                  </Typography>
+                                    </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
                                     <IconButton aria-label="add to favorites">
@@ -204,7 +200,7 @@ function Courses() {
                                 <CardContent>
                                     <Typography variant="body2" color="#256cb5" component="p">
                                         Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
-                  </Typography>
+                                    </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
                                     <IconButton aria-label="add to favorites">
@@ -223,7 +219,7 @@ function Courses() {
                                 <CardContent>
                                     <Typography variant="body2" color="#256cb5" component="p">
                                         Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore. Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore.
-                  </Typography>
+                                    </Typography>
                                 </CardContent>
                                 <CardActions disableSpacing>
                                     <IconButton aria-label="add to favorites">

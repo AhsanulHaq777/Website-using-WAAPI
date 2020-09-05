@@ -29,9 +29,6 @@ import iconright from './Images/right-icon.svg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // flexGrow: 1,
-    // alignContent: 'center',
-    // textAlign: 'center',
     padding: theme.spacing(2)
   },
 
@@ -65,7 +62,6 @@ const useStyles = makeStyles((theme) => ({
 
   },
   rootcard: {
-    // maxWidth: 345,
     color: '#256cb5'
   }
 }));
@@ -154,11 +150,6 @@ function Home() {
                   title="Learn React.js"
                   subheader="Fundamentals of React for Web Design"
                 />
-                {/* <CardMedia
-        className={classes.media}
-        image= "E:/React Projects/project-5-website/src/Images/featureimg1.jpg"
-        title="React.js"
-      /> */}
                 <img style={{ width: '100%' }} src={featimg} alt="myreact" />
                 <CardContent>
                   <Typography variant="body2" color="#256cb5" component="p">
