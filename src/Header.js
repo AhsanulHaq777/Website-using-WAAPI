@@ -31,7 +31,12 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     height: '20px',
     width: 'normal',
-    padding: '10px 10px'
+    padding: '10px 10px',
+    '&:hover': {
+      background: '#0f3153',
+      borderRadius: 5,
+      border: '1px solid white',
+      }
   }
 }));
 
