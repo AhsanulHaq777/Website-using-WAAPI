@@ -21,7 +21,12 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     height: 48,
     padding: '0 30px',
-    margin: '8px'
+    margin: '8px',
+    '&:hover': {
+      background: '#0f3153',
+      borderRadius: 5,
+      border: '1px solid white',
+      }
   },
 }));
 
@@ -43,7 +48,7 @@ function Contact() {
       <div id="maindiv" className={classes.root}>
         <Grid container spacing={5} justify="center" alignItems="center">
           <Grid spacing={5} item xs={12} sm={12} md={6} lg={6}>
-            <div className={classes.root}>
+            <div data-aos="zoom-in-up" data-aos-duration="1300" className={classes.root}>
               <h2 style={{color: '#256cb5', margin: '8px'}}>Get in Touch</h2><br /><br />
              <TextField
                 id="outlined-full-width"

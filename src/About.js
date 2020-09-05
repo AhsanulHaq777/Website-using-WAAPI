@@ -54,7 +54,7 @@ function About() {
           <Grid item xs={8} sm={8} md={8} lg={8}>
             <Grid container justify="center" alignItems="center" spacing={5} >
               <Grid item xs={12} sm={12} md={6} lg={4}>
-                <Paper className={classes.paper}>
+                <Paper data-aos="flip-down" data-aos-once="true" data-aos-duration="1500" className={classes.paper}>
                   <Grid container justify="center" alignItems="center" spacing={3}>
                     <Grid item xs={4} sm={4} md={4} lg={3}>
                       <div>
@@ -71,7 +71,7 @@ function About() {
                 </Paper>
               </Grid>
               <Grid item xs={12} sm={12} md={6} lg={4}>
-                <Paper className={classes.paper}>
+                <Paper data-aos="flip-down" data-aos-once="true" data-aos-duration="1500" className={classes.paper}>
                   <Grid container justify="center" alignItems="center" spacing={3}>
                     <Grid item xs={4} sm={4} md={4} lg={3}><div><img alt="img2" src={icon2} /></div></Grid>
                     <Grid item xs={8} sm={8} md={8} lg={9}><div ><h2>Expert instructors</h2>
@@ -80,7 +80,7 @@ function About() {
                 </Paper>
               </Grid>
               <Grid item xs={12} sm={12} md={6} lg={4}>
-                <Paper className={classes.paper}>
+                <Paper data-aos="flip-down" data-aos-once="true" data-aos-duration="1500" className={classes.paper}>
                   <Grid container justify="center" alignItems="center" spacing={3}>
                     <Grid item xs={4} sm={4} md={4} lg={3} ><div><img alt="img3" src={icon3} /></div></Grid>
                     <Grid item xs={8} sm={8} md={8} lg={9} ><div ><h2>Lifetime access</h2>
@@ -96,24 +96,25 @@ function About() {
       <div id="learningmaindiv" className={classes.learn}>
         <Grid container spacing={5} >
           <Grid item xs={12} sm={12} md={6} lg={6}>
-            <div id="learnheading"><h2>Learn new skills online with top educators</h2>
+            <div data-aos="fade-right" data-aos-duration="700" data-aos-once="true" id="learnheading">
+              <h2>Learn new skills online with top educators</h2>
               <p id="learnmainpara">The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
             </div>
             <Grid container>
 
-              <Grid container spacing={2} justify="center" alignItems="center">
+              <Grid data-aos="fade-right" data-aos-duration="900" data-aos-once="true" container spacing={2} justify="center" alignItems="center">
                 <Grid item xs={1} sm={1} md={1} lg={1}><div><img alt="learn2" src={iconright} /></div></Grid>
                 <Grid item xs={11} sm={11} md={11} lg={11}>
                   <div id="learnpara"><p>Join millions of people from around the world learning together.</p></div>
                 </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center">
+              <Grid data-aos="fade-right" data-aos-duration="1100" data-aos-once="true" container spacing={2} justify="center" alignItems="center">
                 <Grid item xs={1} sm={1} md={1} lg={1}><div><img alt="learn3" src={iconright} /></div></Grid>
                 <Grid item xs={11} sm={11} md={11} lg={11}>
                   <div id="learnpara"><p>Join millions of people from around the world learning together. Online learning is as easy and natural.</p></div>
                 </Grid>
               </Grid>
-              <Grid container spacing={2} justify="center" alignItems="center">
+              <Grid data-aos="fade-right" data-aos-duration="1300" data-aos-once="true" container spacing={2} justify="center" alignItems="center">
                 <Grid item xs={1} sm={1} md={1} lg={1}><div><img alt="learn4" src={iconright} /></div></Grid>
                 <Grid item xs={11} sm={11} md={11} lg={11}>
                   <div id="learnpara"><p>Techniques to engage effectively with vulnerable children and young people.</p></div>

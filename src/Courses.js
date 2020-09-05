@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
     button: {
         background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
-        border: 0,
+        border: 1,
         borderRadius: 3,
         boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
         color: 'white',
@@ -47,6 +47,11 @@ const useStyles = makeStyles((theme) => ({
         fontSize: '18px',
         letterSpacing: 1,
         wordSpacing: 2,
+        '&:hover': {
+          background: '#0f3153',
+          borderRadius: 5,
+          border: '1px solid white',
+          }
       },
 }));
 
@@ -70,7 +75,7 @@ function Courses() {
                 <div >
                     <Grid container spacing={5}>
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Card className={classes.rootcard}>
+                            <Card data-aos="zoom-in" data-aos-once="true" className={classes.rootcard}>
                                 <CardHeader
                                     color='#256cb5'
                                     title="Learn React.js"
@@ -95,7 +100,7 @@ function Courses() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Card className={classes.rootcard}>
+                            <Card data-aos="zoom-in" data-aos-once="true" data-aos-delay="100" className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn JavaScript"
                                     subheader="Fundamentals of JS for Web Design"
@@ -114,7 +119,7 @@ function Courses() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Card className={classes.rootcard}>
+                            <Card data-aos="zoom-in" data-aos-once="true" data-aos-delay="200" className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn HTML5"
                                     subheader="Fundamentals of HTML5 for Web Design"
@@ -133,7 +138,7 @@ function Courses() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Card className={classes.rootcard}>
+                            <Card data-aos="zoom-in" data-aos-once="true" data-aos-delay="300" className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn CSS3"
                                     subheader="Fundamentals of CSS3 for Web Design"
@@ -152,7 +157,7 @@ function Courses() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Card className={classes.rootcard}>
+                            <Card data-aos="zoom-in" data-aos-once="true" data-aos-delay="400" className={classes.rootcard}>
                                 <CardHeader
                                     color='#256cb5'
                                     title="Learn React.js"
@@ -172,7 +177,7 @@ function Courses() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Card className={classes.rootcard}>
+                            <Card data-aos="zoom-in" data-aos-once="true" data-aos-delay="500" className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn JavaScript"
                                     subheader="Fundamentals of JS for Web Design"
@@ -191,7 +196,7 @@ function Courses() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Card className={classes.rootcard}>
+                            <Card data-aos="zoom-in" data-aos-once="true" data-aos-delay="600" className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn HTML5"
                                     subheader="Fundamentals of HTML5 for Web Design"
@@ -210,7 +215,7 @@ function Courses() {
                             </Card>
                         </Grid>
                         <Grid item xs={12} sm={6} md={4} lg={4}>
-                            <Card className={classes.rootcard}>
+                            <Card data-aos="zoom-in" data-aos-once="true" data-aos-delay="700" className={classes.rootcard}>
                                 <CardHeader
                                     title="Learn CSS3"
                                     subheader="Fundamentals of CSS3 for Web Design"
@@ -229,7 +234,9 @@ function Courses() {
                             </Card>
                         </Grid>
                     </Grid>
-                    <div style={{marginTop: '70px',textAlign: 'center', marginBottom: '50px'}}><Button className={classes.button}>See More</Button></div>
+                    <div style={{marginTop: '70px',textAlign: 'center', marginBottom: '50px'}}>
+                        <Button className={classes.button}>See More</Button>
+                    </div>
                 </div>
             </div>
             <div>
