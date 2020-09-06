@@ -28,7 +28,7 @@ import iconright from './Images/right-icon.svg'
 
 //animations imports
 import useWebanimations from "@wellyshen/use-web-animations";
-import {fadeInLeft} from "@wellyshen/use-web-animations";
+import {zoomIn } from "@wellyshen/use-web-animations";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -87,7 +87,8 @@ const useStyles = makeStyles((theme) => ({
 
 function Home() {
   const classes = useStyles();
-  const {ref} = useWebanimations({...fadeInLeft});
+  
+  const {ref} = useWebanimations({...zoomIn});
   return (
     <div >
       <div className={classes.root} id="main-grid-image" >

@@ -33,7 +33,11 @@ const useStyles = makeStyles((theme) => ({
 
     },
     rootcard: {
-        color: '#256cb5'
+        color: '#256cb5',
+        '&:hover': {
+            color: 'white',
+          backgroundColor: '#9edbec'
+          }
     },
     button: {
         background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
